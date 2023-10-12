@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: itpy
     spec:
       containers:
-      - image: java-quarkus-image:latest
+      - image: quay.io/redhat-appstudio-qe/byoc-otep-tenant/byoc-app-bnra/itpy@sha256:73c99091db1b6b77ed46064388a219de5746881e1d667328364481a13d268db8
         name: my-java-quarkus
         ports:
         - containerPort: 8081
