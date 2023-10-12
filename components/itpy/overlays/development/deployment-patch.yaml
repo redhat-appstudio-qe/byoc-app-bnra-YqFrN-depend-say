@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: itpy
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - env:
+        - name: POC
+          value: POC
+        image: quay.io/redhat-appstudio-qe/byoc-otep-tenant/byoc-app-bnra/itpy@sha256:73c99091db1b6b77ed46064388a219de5746881e1d667328364481a13d268db8
+        name: my-java-quarkus
+        resources: {}
+status: {}
